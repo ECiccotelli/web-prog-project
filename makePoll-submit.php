@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+
+$file = "polls.txt";
+$count = 1;
+$handle = fopen($file,'r');
+
+while(!feof($handle))
+{
+	$line = fgets($handle);
+	$count += 1;
+}
+
+fclose($handle);
+
+print $count;
+
+$poll = "\n".$count.":".$_POST["pollname"].":".$_POST["description"].":".
+checkEmpty($_POST["val1Input"]).":0:".
+checkEmpty($_POST["val2Input"]).":0:".
+checkEmpty($_POST["val3Input"]).":0:".
+checkEmpty($_POST["val4Input"]).":0:".
+checkEmpty($_POST["val5Input"]).":0:".
+checkEmpty($_POST["val6Input"]).":0:".
+checkEmpty($_POST["val7Input"]).":0:".
+checkEmpty($_POST["val8Input"]).":0:".
+checkEmpty($_POST["val9Input"]).":0:".
+checkEmpty($_POST["val10Input"]).":0;"; //."\n";
+
+file_put_contents("polls.txt", $poll, FILE_APPEND);				
+
+function checkEmpty($input)
+{
+	if($input == "")
+		return "NULL";
+	else
+		return $input;
+}
+
+?>
+
+</body>
+</html>

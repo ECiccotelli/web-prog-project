@@ -32,17 +32,15 @@ $file = fopen("polls.txt", "r");
 		{
 		?>
 		<form action = "MCPolls-vote.php" method="post">
-			<p>Poll name: <?php print $info[1]?></p>
-			<p>Description: <?php print $info[2]?></p>
+			<p>Poll name: <?php print $info[2]?></p>
+			<p>By: <?php print $info[1]?></p>
+			<p>Description: <?php print $info[3]?></p>
 			<?php
-			for($i = 3; $i < sizeof($info); $i+=2)
+			for($i = 4; $i < sizeof($info); $i+=2)
 			{
 				if($info[$i] == "NULL")
 					break;
 				$buttonID = $info[0].".".$i;
-				printf("type = \"button\" id = \"".$buttonID."\" onClick = \"vote('".$voter."','".$buttonID."');\">".$info[$i]."");
-				printf("<button type = \"button\" id = \"".$buttonID."\" onClick = \"vote('Mike');\">".$info[$i]."</button>");
-				printf("<p><button type = \"button\" id = \"".$buttonID."\" onClick = \"vote('".$voter."','".$buttonID."');\">".$info[$i]."</button></p>");
 				?><p><button type="button" id="<?php print $buttonID;?>" onClick = "vote('<?php print $voter; ?>', '<?php print $buttonID; ?>');"><?php print $info[$i]?></button></p>
 				<?php
 			}

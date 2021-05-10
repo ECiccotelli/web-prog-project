@@ -4,6 +4,17 @@
 
 <?php
 
+        // Start the session
+session_start();
+
+$loggedIn = $_SESSION["loggedIn"];
+$uname = "NULL";
+if($_SESSION["loggedIn"])
+	$uname = $_SESSION["username"];
+
+
+
+
 $file = "polls.txt";
 $count = 1;
 $handle = fopen($file,'r');
@@ -18,7 +29,7 @@ fclose($handle);
 
 print $count;
 
-$poll = "\n".$count.":".$_POST["pollname"].":".$_POST["description"].":".
+$poll = "\n".$count.":".$uname.":".$_POST["pollname"].":".$_POST["description"].":".
 checkEmpty($_POST["val1Input"]).":0:".
 checkEmpty($_POST["val2Input"]).":0:".
 checkEmpty($_POST["val3Input"]).":0:".

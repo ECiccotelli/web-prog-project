@@ -8,6 +8,15 @@
 
 <body>
 
+        <?php
+        // Start the session
+        session_start();
+        $loggedIn = $_SESSION["loggedIn"];
+        $uname = "NULL";
+        if($_SESSION["loggedIn"])
+	        $uname = $_SESSION["username"];
+        ?>
+
         <h1>Make a Poll below!</h1>
         <div>
             

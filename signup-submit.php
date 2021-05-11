@@ -9,7 +9,7 @@
 
 <body>
 <?php
-
+session_start();
 $username = $_POST["username"];
 $user = $username;
 

@@ -4,7 +4,7 @@
     display: none;
 }
 
-#makePollButton, #poll, #choices{
+#makePollButton, #viewPollButton, #viewMainPolls, #poll, #choices{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
@@ -14,7 +14,7 @@
     right: 30px;
 }
 
-#makePollButton {
+#makePollButton, #viewPollButton, #viewMainPolls {
     width: 150px;
     height: 50px
 }

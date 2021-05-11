@@ -14,7 +14,7 @@ session_start();
 
 $loggedIn = $_SESSION["loggedIn"];
 $uname = "NULL";
-if($_SESSION["loggedIn"])
+if($loggedIn === "True")
 	$uname = $_SESSION["username"];
 
 $voter = "Mike";
@@ -72,6 +72,7 @@ $file = fopen("polls.txt", "r");
 </div>
 
 <div id = "links">
+<a href='viewMyPolls.php'><button id = "viewPollButton">View my polls!</button></a>
 <a href='makePoll.php'><button id = "makePollButton">Make a poll here!</button></a>
 </div>
 

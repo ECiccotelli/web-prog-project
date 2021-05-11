@@ -29,14 +29,18 @@ $file = fopen("polls.txt", "r");
 		$line_of_text = fgets($file);
 		$info = explode(':', $line_of_text);
 		$voters = explode(';', $line_of_text);
+		
+		if(!in_array($uname, $voters) && $info[0] != "")
+		{
 		?>
 		<div id = "poll">
 		<?php
 
 		//if($voter == $voters[1])
 			//print "equal";
-		if(!in_array($voter, $voters))
-		{
+		//$voter = str_replace(array("\n","\r"),"",$voters[1]);
+		//echo $voter;
+		
 		?>
 		<form action = "MCPolls-vote.php" method="post">
 			<p id = "pollUname"><?php print $info[1]?></p>
@@ -47,8 +51,8 @@ $file = fopen("polls.txt", "r");
 			{
 				if($info[$i] == "NULL")
 					break;
-				$buttonID = $info[0].".".$i;
-				?><p><input type="radio" name=<?php $info[2]?> value=<?php $info[$i]?>/><?php print $info[$i]?></p>
+				$buttonID = $info[0].":".$i;
+				?><p><input type="radio" name="vote" value="<?php echo $buttonID?>" /><?php print $info[$i]?></p>
 				<?php
 			}
 

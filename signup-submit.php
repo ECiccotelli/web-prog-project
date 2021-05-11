@@ -3,7 +3,7 @@
 <html>
 
 <head>
-<link href = "polling.css" type = "text/css" rel = "stylesheet" />
+<link href = "MCPolls.css" type = "text/css" rel = "stylesheet" />
 </head>
 
 
@@ -22,6 +22,8 @@ foreach($_POST as $key => $value){
 }
 
 file_put_contents("users.txt","\n".$user,FILE_APPEND);
+$_SESSION["loggedIn"] = "True";
+$_SESSION["username"] = $username;
 ?>
 
 
@@ -30,8 +32,8 @@ file_put_contents("users.txt","\n".$user,FILE_APPEND);
 Thank you for signing up! You may now sign in by clicking here!
 </h1>
 <center>
-<form action = "main.php" method = "post" >
-<input class = "button" type = "submit" value = "Click this button to start creating polls!">
+<form action = "MCPolls.php" method = "post" >
+<input class = "button" type = "submit" value = "Thank you for signing up! ">
 </form>
 </center>
 </div>

@@ -2,7 +2,7 @@
 
 <html>
 <head>
-<link href = "polling.css" type= "text/css" rel ="stylesheet" />
+<link href = "MCPolls.css" type= "text/css" rel ="stylesheet" />
 </head>
 <body>
 <h1>
@@ -27,7 +27,7 @@
 <input class = "button" type="submit" value="LOG IN">
 
 <button class = "signUp">
-<a href = "signUp.php"> CREATE A NEW ACCOUNT </a> 
+<a href = "signUp.php"> Create a new account! </a> 
 </button>
 
 </fieldset>

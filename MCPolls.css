@@ -3,3 +3,42 @@
     /*visibility: hidden;*/
     display: none;
 }
+
+#makePollButton, #poll, #choices{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#links {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+#makePollButton {
+    width: 150px;
+    height: 50px
+}
+
+#poll{
+    border: 5px solid #026937;
+    width: 400px;
+    padding: 10px;
+}
+
+#choices {
+    width: 100px;
+    height: 25px;
+    background-color: #026937;
+}
+
+#pollUname {
+    color: #026937;
+    font-size: 10pt;
+    position: relative;
+    top: -22px;
+    right: 6px;
+}
+
+#options{
+
+}

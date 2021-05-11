@@ -23,7 +23,7 @@ $file = fopen("polls.txt", "r");
 		$info = explode(':', $line_of_text);
 		$voters = explode(';', $line_of_text);
 		?>
-		<div>
+		<div id = "poll">
 		<?php
 
 		//if($voter == $voters[1])
@@ -32,8 +32,8 @@ $file = fopen("polls.txt", "r");
 		{
 		?>
 		<form action = "MCPolls-vote.php" method="post">
+			<p id = "pollUname"><?php print $info[1]?></p>
 			<p>Poll name: <?php print $info[2]?></p>
-			<p>By: <?php print $info[1]?></p>
 			<p>Description: <?php print $info[3]?></p>
 			<?php
 			for($i = 4; $i < sizeof($info); $i+=2)
@@ -41,7 +41,7 @@ $file = fopen("polls.txt", "r");
 				if($info[$i] == "NULL")
 					break;
 				$buttonID = $info[0].".".$i;
-				?><p><button type="button" id="<?php print $buttonID;?>" onClick = "vote('<?php print $voter; ?>', '<?php print $buttonID; ?>');"><?php print $info[$i]?></button></p>
+				?><p><button id = "choices" type="button" onClick = "vote('<?php print $voter; ?>', '<?php print $buttonID; ?>');"><?php print $info[$i]?></button></p>
 				<?php
 			}
 
@@ -57,6 +57,10 @@ $file = fopen("polls.txt", "r");
 	}
 	fclose($file);
 	?>
+</div>
+
+<div id = "links">
+<a href='makePoll.php'><button id = "makePollButton">Make a poll here!</button></a>
 </div>
 
 

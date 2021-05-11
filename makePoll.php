@@ -12,9 +12,13 @@
         // Start the session
         session_start();
         $loggedIn = $_SESSION["loggedIn"];
-        $uname = "NULL";
-        if($_SESSION["loggedIn"])
-	        $uname = $_SESSION["username"];
+        if(!$loggedIn)
+        {
+            header("Location: signin.php");
+            exit;
+        }
+        $uname = $_SESSION["username"];
+	        
         ?>
 
         <h1>Make a Poll below!</h1>

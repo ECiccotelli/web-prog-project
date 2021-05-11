@@ -41,9 +41,9 @@
                 {
                     if($info[$i] == "NULL")
                         break;
-                    $buttonID = $info[0].":".$i;
+                    $votes = $info[$i + 1];
 			?>
-                    <p>0% <?php print $info[$i]?></p>
+                    <p><b><?php print $votes?></b> <?php print $info[$i]?></p>
 			<?php
 			    }
 			?>

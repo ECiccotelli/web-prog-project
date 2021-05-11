@@ -10,6 +10,13 @@
 
 <?php
 
+session_start();
+
+$loggedIn = $_SESSION["loggedIn"];
+$uname = "NULL";
+if($_SESSION["loggedIn"])
+	$uname = $_SESSION["username"];
+
 $voter = "Mike";
 $file = fopen("polls.txt", "r");
 ?>
@@ -41,11 +48,12 @@ $file = fopen("polls.txt", "r");
 				if($info[$i] == "NULL")
 					break;
 				$buttonID = $info[0].".".$i;
-				?><p><button id = "choices" type="button" onClick = "vote('<?php print $voter; ?>', '<?php print $buttonID; ?>');"><?php print $info[$i]?></button></p>
+				?><p><input type="radio" name=<?php $info[2]?> value=<?php $info[$i]?>/><?php print $info[$i]?></p>
 				<?php
 			}
 
 			?>
+		<p><input type="submit" name="Submit Vote" /><p>
 		</form>
 		<?php 
 		} 
@@ -61,6 +69,10 @@ $file = fopen("polls.txt", "r");
 
 <div id = "links">
 <a href='makePoll.php'><button id = "makePollButton">Make a poll here!</button></a>
+</div>
+
+<div id = "uname">
+<p><?php print "Logged in as: ".$uname;?></p>
 </div>
 
 

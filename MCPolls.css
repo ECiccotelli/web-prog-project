@@ -42,3 +42,9 @@
 #options{
 
 }
+
+#uname {
+    position: fixed;
+    bottom: 925px;
+    right: 100px;
+}

@@ -5,35 +5,36 @@
 <link href = "MCPolls.css" type= "text/css" rel ="stylesheet" />
 </head>
 <body>
-<h1>
-    Sign in Page!
-</h1>
-<form action="signin-submit.php" method="post">
+    <h1>
+        Sign in Page!
+    </h1>
 
-<div class = "login">
+    <form action="signin-submit.php" method="post">
 
-<fieldset>
-<h1> LOGIN </h1>
-<p>
-<strong>UserName:</strong>
-<input type="text" name="username" size="16"  required />
+        <div class = "login">
 
-<br />
+        <fieldset>
+        <h1> LOGIN </h1>
+        <p>
+        <strong>UserName:</strong>
+        <input type="text" name="username" size="16"  required />
 
-<strong>Password:</strong>
-<input type="password" name="password" size="16" required />
-</p>
-             
-<input class = "button" type="submit" value="LOG IN">
+        <br />
 
-<button class = "signUp">
-<a href = "signUp.php"> Create a new account! </a> 
-</button>
+        <strong>Password:</strong>
+        <input type="password" name="password" size="16" required />
+        </p>
 
-</fieldset>
-</form>
+        <input class = "button" type="submit" value="LOG IN">
 
-</div>
+        <button class = "signUp">
+            <a href = "signUp.php"> Create a new account! </a> 
+        </button>
+
+        </fieldset>
+
+        </div>
+    </form>
 
 </body>
 

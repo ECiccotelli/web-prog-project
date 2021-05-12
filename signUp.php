@@ -3,34 +3,32 @@
 <html>
 
 <head>
-<link href = "MCPolls.css" type = "text/css" rel = "stylesheet" />
+    <link href = "MCPolls.css" type = "text/css" rel = "stylesheet" />
 </head>
 
 <body>
 
-<form action="signup-submit.php" method="post">
+    <form action="signup-submit.php" method="post">
 
-<div class = "login">
+        <div class = "login">
 
-<fieldset>
-<h1> Create a new account to start making polls! </h1>
-<p>
-<strong>Username: </strong>
-<input type="text" name="username" size="16" required />
+            <fieldset>
+            <h1> Create a new account to start making polls! </h1>
+            <p>
+                <strong>Username: </strong>
+                <input type="text" name="username" size="16" required />
 
-<br />
+                <br />
 
-<strong>Password: </strong>
-<input type="password" name="password" size="16" required />
-</p>
-             
-<input class = "button" type="submit" value="Create Account">
+                <strong>Password: </strong>
+                <input type="password" name="password" size="16" required />
+            </p>
 
-</fieldset>
-</form>
+            <input class = "button" type="submit" value="Create Account">
 
-</div>
-
+            </fieldset>
+        </div>
+    </form>
 
 
 

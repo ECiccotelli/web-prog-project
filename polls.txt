@@ -2,5 +2,5 @@
 2:lol:testr435:name345:4ertd:0:35345f:2:234:0:123:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;lol;NULL;
 3:lol:etr:ert:rt:3:tyu:7:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;lol;
 4:lol:testyu:ert56:gg:0:df:1:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;lol;
-5:lol:skdfgjlsjf:sdfjsghr:rty:0:546:0:Sherlock:0:123:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;
+5:lol:skdfgjlsjf:sdfjsghr:rty:0:546:0:Sherlock:1:123:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;lol;
 6:lol:Sanjay Sewbhajan:Testing the features of poll voter:Monkey:0:Enola:1:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;lol;

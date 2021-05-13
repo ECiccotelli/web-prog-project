@@ -54,6 +54,6 @@ function checkEmpty($input)
 }
 
 ?>
-<?php header("Location: http://localhost/web-prog-project/MCPolls.php"); ?>
+<?php header("Location: ./MCPolls.php"); ?>
 </body>
 </html>

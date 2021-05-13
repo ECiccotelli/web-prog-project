@@ -1,3 +1,8 @@
+<?php
+// Start the session
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -10,7 +15,6 @@
 
 <?php
 
-session_start();
 
 $loggedIn = $_SESSION["loggedIn"];
 $uname = "NULL";

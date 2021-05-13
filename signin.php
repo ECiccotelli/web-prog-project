@@ -4,8 +4,8 @@
 <head>
 <link href = "MCPolls.css" type= "text/css" rel ="stylesheet" />
 </head>
-<body>
-    <h1>
+<body id = "account">
+    <h1 class = "cen">
         Sign in Page!
     </h1>
 
@@ -13,16 +13,16 @@
 
         <div class = "login">
 
-        <fieldset>
+
         <h1> LOGIN </h1>
         <p>
         <strong>UserName:</strong>
-        <input type="text" name="username" size="16"  required />
+        <input class="field" type="text" name="username" size="16"  required />
 
         <br />
 
         <strong>Password:</strong>
-        <input type="password" name="password" size="16" required />
+        <input class="field" type="password" name="password" size="16" required />
         </p>
 
         <input class = "button" type="submit" value="LOG IN">
@@ -31,7 +31,7 @@
             <a href = "signUp.php"> Create a new account! </a> 
         </button>
 
-        </fieldset>
+
 
         </div>
     </form>

@@ -62,7 +62,7 @@ $file = fopen("polls.txt", "r");
 			}
 
 			?>
-		<p><input type="submit" name="Submit Vote" /><p>
+		<p><input class = "button" type="submit" name="Submit Vote" /><p>
 		</form>
 		<?php 
 		} 

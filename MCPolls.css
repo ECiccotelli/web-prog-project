@@ -4,7 +4,7 @@
     display: none;
 }
 
-#makePollButton, #viewPollButton, #viewMainPolls, #poll, #choices{
+#makePollButton, #viewPollButton, #viewMainPolls, #poll, #choices, .login{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
@@ -39,12 +39,45 @@
     right: 6px;
 }
 
-#options{
+#account{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+}
 
+.login{
+    border: 5px solid #026937;
+    width: 1000px;
+    padding: 10px;
+    text-align: center;
+}
+
+.cen {
+    text-align: center;
+}
+
+.field {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+body {
+    background-color: #0093E9;
+    background-image: linear-gradient(270deg, #0093E9 0%, #80D0C7 100%);
+}
+
+button, .button {
+    border: 2px solid #a1a1a1;
+    padding: 7px 30px; 
+    background: #dddddd;
+    border-radius: 25px;
+    box-shadow: 0 0 5px red;
 }
 
 #uname {
     position: fixed;
     top: 45px;
     right: 100px;
+    font-weight: bold;
 }

@@ -1,6 +1,7 @@
-1:lol:it:works:yes:4:no:2:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;NULL;NULL;NULL;NULL;
-2:lol:testr435:name345:4ertd:0:35345f:2:234:0:123:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;NULL;
+1:lol:it:works:yes:5:no:3:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;NULL;NULL;NULL;NULL;testtt;testtt;
+2:lol:testr435:name345:4ertd:1:35345f:2:234:1:123:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;NULL;testtt;testtt;
 3:lol:etr:ert:rt:3:tyu:7:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;
-4:lol:testyu:ert56:gg:0:df:1:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;
+4:lol:testyu:ert56:gg:1:df:1:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;testtt;
 5:lol:skdfgjlsjf:sdfjsghr:rty:0:546:0:Sherlock:1:123:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;
-6:lol:Sanjay Sewbhajan:Testing the features of poll voter:Monkey:0:Enola:1:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;
+6:lol:Sanjay Sewbhajan:Testing the features of poll voter:Monkey:1:Enola:2:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;testtt;testtt;
+:1

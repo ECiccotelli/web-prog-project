@@ -68,8 +68,8 @@
             <span id="val10"></span>
             <input id="val10Input" name = "val10Input" type="text" size="20" />
             <br />
-            <input type="submit" name="Log In" /> <br />
-            <input type="reset" name="clear" /> <br />
+            <input class="button" type="submit" name="Log In" /> <br />
+            <input class="button" type="reset" name="clear" /> <br />
             </fieldset>
             </form>
         </div>

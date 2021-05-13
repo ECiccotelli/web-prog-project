@@ -20,21 +20,28 @@
         }
 
     }
-        
+    $taken = false;
     foreach (file("users.txt", FILE_IGNORE_NEW_LINES) as $storedUsers) {
-        list($prevUsername, $prevPassword) = explode(",", $storedUsers);
+        $storedUsers = trim($storedUsers);
+        
+        if (!empty($storedUsers))
+        {
+            list($prevUsername, $prevPassword) = explode(",", $storedUsers);
 
-        $username = trim($username);
-        $prevUsername = trim($prevUsername);
-        $prevPassword = trim($prevPassword);
-        $taken = false;
+            $username = trim($username);
+            $prevUsername = trim($prevUsername);
+            $prevPassword = trim($prevPassword);
+        
 
-        if( (strcmp($username, $prevUsername) == 0)) {
-            echo "ERROR! Username already taken. Please try signing up again with a different username. ";
-            $taken = true;
-            echo $taken;
-            break;
+            if( (strcmp($username, $prevUsername) == 0)) {
+                echo "ERROR! Username already taken. Please try signing up again with a different username. ";
+                $taken = true;
+                echo $taken;
+                break;
         }
+            
+        }
+
     }
     
         

@@ -19,21 +19,28 @@ session_start();
     $pw = $_POST["password"];
     $user = $username;
     $success = false;
+    
 
-    foreach (file("users.txt", FILE_IGNORE_NEW_LINES) as $storedUsers) {
-        list($prevUsername, $prevPassword) = explode(",", $storedUsers);
+    foreach (file("users.txt") as $storedUsers) {
+        $storedUsers = trim($storedUsers);
 
-        $username = trim($username);
-        $pw = trim($pw);
-        $prevUsername = trim($prevUsername);
-        $prevPassword = trim($prevPassword);
+        if (!empty($storedUsers))
+        {
+            list($prevUsername, $prevPassword) = explode(",", $storedUsers);
 
-        if( (strcmp($username, $prevUsername) == 0) && (strcmp($pw, $prevPassword) == 0)) {
-            echo "Successfully logged in!";
-            $_SESSION["loggedIn"] = "True";
-            $_SESSION["username"] = $username;
-            $success = true;
+            $username = trim($username);
+            $pw = trim($pw);
+            $prevUsername = trim($prevUsername);
+            $prevPassword = trim($prevPassword);
+
+            if( (strcmp($username, $prevUsername) == 0) && (strcmp($pw, $prevPassword) == 0)) {
+                echo "Successfully logged in!";
+                $_SESSION["loggedIn"] = "True";
+                $_SESSION["username"] = $username;
+                $success = true;
+            }
         }
+
     }
     
     if($success) //If successfully logged in

@@ -22,14 +22,16 @@ $handle = fopen($file,'r');
 while(!feof($handle))
 {
 	$line = fgets($handle);
-	$count += 1;
+	if (!empty($line)){
+		$count += 1;
+	}
 }
 
 fclose($handle);
 
 //print $count;
 
-$poll = "\n".$count.":".$uname.":".$_POST["pollname"].":".$_POST["description"].":".
+$poll = $count.":".$uname.":".$_POST["pollname"].":".$_POST["description"].":".
 checkEmpty($_POST["val1Input"]).":0:".
 checkEmpty($_POST["val2Input"]).":0:".
 checkEmpty($_POST["val3Input"]).":0:".
@@ -39,7 +41,7 @@ checkEmpty($_POST["val6Input"]).":0:".
 checkEmpty($_POST["val7Input"]).":0:".
 checkEmpty($_POST["val8Input"]).":0:".
 checkEmpty($_POST["val9Input"]).":0:".
-checkEmpty($_POST["val10Input"]).":0;"; //."\n";
+checkEmpty($_POST["val10Input"]).":0;\n"; //."\n";
 
 file_put_contents("polls.txt", $poll, FILE_APPEND);				
 

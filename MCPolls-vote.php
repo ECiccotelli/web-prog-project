@@ -49,5 +49,5 @@ while(!feof($handle))
 		break;
 	}
 }
-
+header("Location: http://localhost/web-prog-project/MCPolls.php");
 ?>

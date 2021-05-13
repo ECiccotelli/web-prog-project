@@ -1,3 +1,9 @@
+<?php
+// Start the session
+session_start();
+?>
+
+
 <!DOCTYPE html>
 
 <html>
@@ -58,8 +64,8 @@
             </h1>
         </div>
         <center>
-            <form action = "MCPolls.php" method = "post" >
-                <input class = "button" type = "submit" value = "Thank you for signing up! Click here to start creating polls!">
+            <form action = "signin.php" method = "post" >
+                <input class = "button" type = "submit" value = "Thank you for signing up! Click here to sign in and start creating polls!">
             </form>
         </center>
         <?php

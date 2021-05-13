@@ -77,7 +77,20 @@ $file = fopen("polls.txt", "r");
 </div>
 
 <div id = "uname">
-<p><?php print "Logged in as: ".$uname;?></p>
+<?php
+
+		if($uname === "NULL"){
+?>		
+		<p><?php print "You are not logged in!";?></p>
+<?php
+		}
+		else {
+?>		
+			<p><?php print "Logged in as: ".$uname;?></p>
+<?php
+		}
+?>
+
 </div>
 
 

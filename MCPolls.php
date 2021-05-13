@@ -26,6 +26,7 @@ $file = fopen("polls.txt", "r");
 ?>
 
 <h1 id = "title">Polls</h1>
+
 <div>
 <?php
 	while (!feof($file)) 

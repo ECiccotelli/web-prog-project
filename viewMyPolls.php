@@ -34,8 +34,8 @@
 
             ?>
                     <div id = "poll">
+                        <p id = "pollUname"><?php print $info[1]?></p>
                         <p>Poll name: <?php print $info[2]?></p>
-                        <p>By: <?php print $info[1]?></p>
                         <p>Description: <?php print $info[3]?></p>
             <?php
                 for($i = 4; $i < sizeof($info); $i+=2)

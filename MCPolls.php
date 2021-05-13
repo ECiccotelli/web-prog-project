@@ -14,7 +14,7 @@ session_start();
 
 $loggedIn = $_SESSION["loggedIn"];
 $uname = "NULL";
-if($loggedIn === "True")
+if($loggedIn)
 	$uname = $_SESSION["username"];
 
 $voter = "Mike";
@@ -81,7 +81,7 @@ $file = fopen("polls.txt", "r");
 
 		if($uname === "NULL"){
 ?>		
-		<p><?php print "You are not logged in!";?></p>
+			<p><?php print "You are not logged in!";?></p>
 <?php
 		}
 		else {

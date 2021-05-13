@@ -13,8 +13,9 @@
         session_start();
         $file = fopen("polls.txt", "r");
         $loggedIn = $_SESSION["loggedIn"];
+        $uname = "NULL";
         if($loggedIn)
-	        $uname = $_SESSION["username"];
+            $uname = $_SESSION["username"];
         ?>
         <h1 id = "title">My Polls</h1>
         <div>
@@ -58,25 +59,26 @@
             fclose($file);
         ?>
         </div>
-        <div id = "uname">
-        <?php
-
-                if($uname === "NULL"){
-        ?>		
-                <p><?php print "You are not logged in!";?></p>
-        <?php
-                }
-                else {
-        ?>		
-                    <p><?php print "Logged in as: ".$uname;?></p>
-        <?php
-                }
-        ?>
-        </div>
 
 <div id = "links">
 <a href='MCPolls.php'><button id = "viewMainPolls">View all polls!</button></a>
 <a href='makePoll.php'><button id = "makePollButton">Make a poll here!</button></a>
+</div>
+
+<div id = "uname">
+<?php
+
+        if($uname === "NULL"){
+?>		
+        <p><?php print "You are not logged in!";?></p>
+<?php
+        }
+        else {
+?>		
+        <p><?php print "Logged in as: ".$uname;?></p>
+<?php
+        }
+?>
 </div>
 
 </body>

@@ -3,13 +3,16 @@
 //print($_POST["vote"]);
 
 session_start();
-//$loggedIn = $_SESSION["loggedIn"];
+$loggedIn = $_SESSION["loggedIn"];
 $uname = "NULL";
-//if($loggedIn)
-	//$uname = $_SESSION["username"];
+if($loggedIn)
+	$uname = $_SESSION["username"];
+else {
+	header("Location: http://localhost/web-prog-project/signin.php");
+}
 
 $IDs = explode(":",$_POST["vote"]);
-
+//poll id first number 2.6
 $file = "polls.txt";
 $handle = fopen($file,'r');
 

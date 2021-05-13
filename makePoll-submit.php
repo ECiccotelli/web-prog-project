@@ -27,7 +27,7 @@ while(!feof($handle))
 
 fclose($handle);
 
-print $count;
+//print $count;
 
 $poll = "\n".$count.":".$uname.":".$_POST["pollname"].":".$_POST["description"].":".
 checkEmpty($_POST["val1Input"]).":0:".
@@ -52,6 +52,6 @@ function checkEmpty($input)
 }
 
 ?>
-
+<?php header("Location: http://localhost/web-prog-project/MCPolls.php"); ?>
 </body>
 </html>

@@ -12,6 +12,10 @@ $uname = "NULL";
 if($_SESSION["loggedIn"])
 	$uname = $_SESSION["username"];
 
+if ($uname == "NULL"){
+    header("Location: ./signin.php");
+}
+
 
 
 

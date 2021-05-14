@@ -4,7 +4,7 @@
     display: none;
 }
 
-#makePollButton, #viewPollButton, #viewMainPolls, #poll, #choices, .login{
+#makePollButton, #viewPollButton, #viewMainPolls, #poll, #choices, .login, #title, #log, #button, .button{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
@@ -21,8 +21,9 @@
 
 #poll{
     border: 5px solid #026937;
-    width: 400px;
+    width: 1000px;
     padding: 10px;
+    background: white;
 }
 
 #choices {
@@ -72,7 +73,16 @@ button, .button {
     padding: 7px 30px; 
     background: #dddddd;
     border-radius: 25px;
-    box-shadow: 0 0 5px red;
+    box-shadow: 0 0 5px black;
+}
+
+.loginPageButtons {
+    border: 2px solid #a1a1a1;
+    padding: 7px 30px; 
+    background: #dddddd;
+    border-radius: 25px;
+    box-shadow: 0 0 5px black;
+    font-size: 20px;
 }
 
 #uname {
@@ -80,4 +90,23 @@ button, .button {
     top: 45px;
     right: 100px;
     font-weight: bold;
+    text-align: center;
+    
+}
+
+#title {
+    text-shadow: 0 0 5px black;
+    color: white;
+    font-size: 50px;
+    
+}
+
+#log {
+    text-shadow: 0 0 5px black;
+    color: white;
+    font-size: 20px;
+}
+
+#logoutSubmit {
+    text-align: center;
 }

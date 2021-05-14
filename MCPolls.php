@@ -86,17 +86,20 @@ $file = fopen("polls.txt", "r");
 
 		if($uname === "NULL"){
 ?>		
-			<p><?php print "You are not logged in!";?></p>
+			<p id = "log"><?php print "You are not logged in!";?></p>
 <?php
 		}
 		else {
 ?>		
-			<p><?php print "Logged in as: ".$uname;?></p>
+			<p id = "log"><?php print "Logged in as: ".$uname;?></p>
 <?php
 		}
 ?>
+    
+    <a href='logout-submit.php'><button id = "logoutSubmit">Log out!</button></a>
 
 </div>
+    
 
 
 </body>

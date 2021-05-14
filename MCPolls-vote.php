@@ -1,6 +1,5 @@
 
 <?php
-//print($_POST["vote"]);
 
 session_start();
 $loggedIn = $_SESSION["loggedIn"];
@@ -23,7 +22,6 @@ while(!feof($handle))
 		$lineValues[$IDs[1] + 1] = strval(intval($lineValues[$IDs[1] + 1]) + 1);
 		$replace = implode(":",$lineValues);
 		$replace = str_replace("\n",$uname.";\n",$replace); //\r
-		//echo $replace;
 		fclose($handle);
 		$lines = array();
 		$handle=fopen('polls.txt', 'r');
@@ -39,7 +37,6 @@ while(!feof($handle))
 		{
 			if(strcmp($lines[$i], $line) == 0)
 			{
-				//echo $val;
 				echo $replace;
 				$lines[$i] = $replace;
 				file_put_contents("polls.txt", $lines);

@@ -1,7 +1,1 @@
-1:lol:it:works:yes:5:no:3:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;NULL;NULL;NULL;NULL;testtt;testtt;
-2:lol:testr435:name345:4ertd:1:35345f:2:234:1:123:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;NULL;testtt;testtt;
-3:lol:etr:ert:rt:3:tyu:7:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;
-4:lol:testyu:ert56:gg:1:df:1:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;testtt;
-5:lol:skdfgjlsjf:sdfjsghr:rty:0:546:0:Sherlock:1:123:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;
-6:lol:Sanjay Sewbhajan:Testing the features of poll voter:Monkey:1:Enola:2:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;testtt;testtt;
-:1
+1:Eric:Favorite Soda:Which is your favorite soda?:Coke:0:Pepsi:0:Dr. Pepper:0:Sprite:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;2:Eric:Favorite Pet:What is your favorite pet?:Dog:0:Cat:0:Parrot:0:Fish:0:Raccoon:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;3:Sanjay:Favorite Programming Language:Choose your favorite programming language!:C++:0:Java:0:Python:0:Binary Code:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0:NULL:0;

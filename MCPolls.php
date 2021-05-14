@@ -40,11 +40,6 @@ $file = fopen("polls.txt", "r");
 		?>
 		<div id = "poll">
 		<?php
-
-		//if($voter == $voters[1])
-			//print "equal";
-		//$voter = str_replace(array("\n","\r"),"",$voters[1]);
-		//echo $voter;
 		
 		?>
 		<form action = "MCPolls-vote.php" method="post">

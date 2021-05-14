@@ -1,3 +1,2 @@
-lol,man
-lololol,man 
-testtt,gg 
+Eric,eric 
+Sanjay,sanjay

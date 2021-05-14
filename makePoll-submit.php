@@ -33,8 +33,6 @@ while(!feof($handle))
 
 fclose($handle);
 
-//print $count;
-
 $poll = $count.":".$uname.":".$_POST["pollname"].":".$_POST["description"].":".
 checkEmpty($_POST["val1Input"]).":0:".
 checkEmpty($_POST["val2Input"]).":0:".
